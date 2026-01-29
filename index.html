@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand" href="#">Your Name</a>
+        <div class="topbar__actions">
+          <nav class="nav">
+            <a class="nav__link" href="#">Blog</a>
+            <a class="nav__link" href="#">Projects</a>
+            <a class="nav__link" href="#">About</a>
+            <a class="nav__link" href="#">Newsletter</a>
+          </nav>
+          <label class="theme-toggle" aria-label="Toggle theme">
+            <input class="theme-toggle__input" type="checkbox" />
+            <span class="theme-toggle__track">
+              <span class="theme-toggle__icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path
+                    d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"
+                  ></path>
+                </svg>
+              </span>
+              <span class="theme-toggle__knob" aria-hidden="true"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-title">
+      <div class="page-title__inner">
+        <h1 class="page-title__text">THE BLOG</h1>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <div class="blog-section__inner">
+        <h2 class="blog-section__title">Recent blog posts</h2>
+
+        <div class="posts-grid">
+          <!-- Left: featured -->
+          <article class="post post--featured">
+            <a class="post__media post__media--split" href="#">
+              <img src="./images/Image (2).png" alt="Office desks and chairs" />
+            </a>
+
+            <div class="post__body">
+              <div class="post__meta post-color">Olivia Rhye • 1 Jan 2023</div>
+
+              <div class="post__heading">
+                <h3 class="post__title">
+                  <a href="#">UX review presentations</a>
+                </h3>
+
+                <a class="post__arrow" href="#" aria-label="Open post">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7"></path>
+                    <path d="M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="post__excerpt">
+                How do you create compelling presentations that wow your
+                colleagues and impress your managers?
+              </p>
+
+              <div class="chips">
+                <span class="chip chip--violet">Design</span>
+                <span class="chip chip--indigo">Research</span>
+                <span class="chip chip--pink">Presentation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right: two compact posts -->
+          <div class="stack">
+            <article class="post post--compact">
+              <a class="post__media post__media--thumb" href="#">
+                <img
+                  src="./images/Image (3).png"
+                  alt="People working on laptops"
+                />
+              </a>
+
+              <div class="post__body">
+                <div class="post__meta post-color">
+                  Phoenix Baker • 1 Jan 2023
+                </div>
+                <h3 class="post__title post__title--sm">
+                  <a href="#">Migrating to Linear 101</a>
+                </h3>
+                <p class="post__excerpt post__excerpt--sm">
+                  Linear helps streamline software projects, sprints, tasks, and
+                  bug tracking. Here's how to get...
+                </p>
+                <div class="chips">
+                  <span class="chip chip--sky">Design</span>
+                  <span class="chip chip--pink">Research</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="post post--compact">
+              <a class="post__media post__media--thumb" href="#">
+                <img src="./images/Image (4).png" alt="Minimal desk setup" />
+              </a>
+
+              <div class="post__body">
+                <div class="post__meta post-color">
+                  Lana Steiner • 1 Jan 2023
+                </div>
+                <h3 class="post__title post__title--sm">
+                  <a href="#">Building your API Stack</a>
+                </h3>
+                <p class="post__excerpt post__excerpt--sm">
+                  The rise of RESTful APIs has been met by a rise in tools for
+                  creating, testing, and manag...
+                </p>
+                <div class="chips">
+                  <span class="chip chip--green">Design</span>
+                  <span class="chip chip--pink">Research</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Bottom: split card spanning both columns -->
+          <article class="post post--split">
+            <a class="post__media post__media--split" href="#">
+              <img src="./images/Image (5).png" alt="Climate article cover" />
+            </a>
+
+            <div class="post__body post__body--split">
+              <div class="post__meta post-color">Olivia Rhye • 1 Jan 2023</div>
+
+              <div class="post__heading">
+                <h3 class="post__title">
+                  <a href="#">Grid system for better Design User Interface</a>
+                </h3>
+
+                <a class="post__arrow" href="#" aria-label="Open post">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7"></path>
+                    <path d="M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="post__excerpt">
+                A grid system is a design tool used to arrange content on a
+                webpage. It is a series of vertical and horizontal lines that
+                create a matrix of intersecting points, which can be used to
+                align and organize page elements...
+              </p>
+
+              <div class="chips">
+                <span class="chip chip--violet">Design</span>
+                <span class="chip chip--pink">Interface</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="blog-section__inner">
+        <h2 class="blog-section__title">All blog posts</h2>
+        <div class="grid-cards">
+          <article class="post">
+            <a class="post__media" href="#">
+              <img
+                src="./images/Image (6).png"
+                alt="Mountains"
+                class="img-card"
+              />
+            </a>
+
+            <div class="post__body">
+              <div class="post__meta post-color">Alec Whitten • 1 Jan 2023</div>
+              <div class="post__heading">
+                <h3 class="post__title">
+                  <a href="#">Bill Walsh leadership lessons</a>
+                </h3>
+                <a class="post__arrow" href="#" aria-label="Open post">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7"></path>
+                    <path d="M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="post__excerpt">
+                Like to know the secrets of transforming a 2–14 team into a 3x
+                Super Bowl winning Dynasty?
+              </p>
+
+              <div class="chips">
+                <span class="chip chip--violet">Leadership</span>
+                <span class="chip chip--indigo">Management</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__media" href="#">
+              <img
+                src="./images/Image (7).png"
+                alt="Team meeting"
+                class="img-card"
+              />
+            </a>
+
+            <div class="post__body">
+              <div class="post__meta post-color">
+                Demi Wilkinson • 1 Jan 2023
+              </div>
+
+              <div class="post__heading">
+                <h3 class="post__title">
+                  <a href="#">PM mental models</a>
+                </h3>
+                <a class="post__arrow" href="#" aria-label="Open post">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7"></path>
+                    <path d="M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="post__excerpt">
+                Mental models are simple expressions of complex processes or
+                relationships.
+              </p>
+
+              <div class="chips">
+                <span class="chip chip--blue">Product</span>
+                <span class="chip chip--indigo">Research</span>
+                <span class="chip chip--orange">Frameworks</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__media" href="#">
+              <img
+                src="./images/Image (8).png"
+                alt="Workspace"
+                class="img-card"
+              />
+            </a>
+
+            <div class="post__body">
+              <div class="post__meta post-color">Candice Wu • 1 Jan 2023</div>
+
+              <div class="post__heading">
+                <h3 class="post__title">
+                  <a href="#">What is Wireframing?</a>
+                </h3>
+                <a class="post__arrow" href="#" aria-label="Open post">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7"></path>
+                    <path d="M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="post__excerpt">
+                Introduction to Wireframing and its Principles. Learn from the
+                best in the industry.
+              </p>
+
+              <div class="chips">
+                <span class="chip chip--violet">Design</span>
+                <span class="chip chip--indigo">Research</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__media" href="#">
+              <img
+                src="./images/Image (9).png"
+                alt="Designer working"
+                class="img-card"
+              />
+            </a>
+
+            <div class="post__body">
+              <div class="post__meta post-color">Natali Craig • 1 Jan 2023</div>
+
+              <div class="post__heading">
+                <h3 class="post__title">
+                  <a href="#">How collaboration makes us better designers</a>
+                </h3>
+                <a class="post__arrow" href="#" aria-label="Open post">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7"></path>
+                    <path d="M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="post__excerpt">
+                Collaboration can make our teams stronger, and our individual
+                designs better.
+              </p>
+
+              <div class="chips">
+                <span class="chip chip--violet">Design</span>
+                <span class="chip chip--indigo">Research</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__media" href="#">
+              <img
+                src="./images/Image (10).png"
+                alt="Developer at laptop"
+                class="img-card"
+              />
+            </a>
+
+            <div class="post__body">
+              <div class="post__meta post-color">Drew Cano • 1 Jan 2023</div>
+
+              <div class="post__heading">
+                <h3 class="post__title">
+                  <a href="#">Our top 10 Javascript frameworks to use</a>
+                </h3>
+                <a class="post__arrow" href="#" aria-label="Open post">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7"></path>
+                    <path d="M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="post__excerpt">
+                JavaScript frameworks make development easy with extensive
+                features and functionality.
+              </p>
+
+              <div class="chips">
+                <span class="chip chip--green">Software Development</span>
+                <span class="chip chip--blue">Tools</span>
+                <span class="chip chip--pink">SaaS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__media" href="#">
+              <img
+                src="./images/Image (11).png"
+                alt="Podcast recording"
+                class="img-card"
+              />
+            </a>
+
+            <div class="post__body">
+              <div class="post__meta post-color">
+                Orlando Diggs • 1 Jan 2023
+              </div>
+
+              <div class="post__heading">
+                <h3 class="post__title">
+                  <a href="#">Podcast: Creating a better CX Community</a>
+                </h3>
+                <a class="post__arrow" href="#" aria-label="Open post">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7"></path>
+                    <path d="M9 7h8v8"></path>
+                  </svg>
+                </a>
+              </div>
+              <p class="post__excerpt">
+                Starting a community doesn’t need to be complicated, but how do
+                you get started?
+              </p>
+
+              <div class="chips">
+                <span class="chip chip--violet">Podcasts</span>
+                <span class="chip chip--indigo">Customer Success</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <hr
+        class="blog-section__inner"
+        color="#EAECF0"
+        style="margin-top: 32px"
+      />
+      <div class="pagination blog-section__inner">
+        <a href="#" class="pagination__nav">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5016 6.66829H0.834961M0.834961 6.66829L6.66829 12.5016M0.834961 6.66829L6.66829 0.834961"
+              stroke="#667085"
+              stroke-width="1.67"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          Previous
+        </a>
+
+        <div class="pagination__pages">
+          <a href="#" class="page active">1</a>
+          <a href="#" class="page">2</a>
+          <a href="#" class="page">3</a>
+          <span class="dots">…</span>
+          <a href="#" class="page">8</a>
+          <a href="#" class="page">9</a>
+          <a href="#" class="page">10</a>
+        </div>
+
+        <a href="#" class="pagination__nav">
+          Next
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.834961 6.66829H12.5016M12.5016 6.66829L6.66829 0.834961M12.5016 6.66829L6.66829 12.5016"
+              stroke="#667085"
+              stroke-width="1.67"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-content blog-section__inner">
+        <span>© 2023</span>
+        <a href="#" class="footer-text">Twitter</a>
+        <a href="#" class="footer-text">LinkedIn</a>
+        <a href="#" class="footer-text">Email</a>
+        <a href="#" class="footer-text">RSS feed</a>
+        <a href="#" class="footer-text">Add to Feedly</a>
+      </div>
+    </footer>
+  </body>
+</html>
